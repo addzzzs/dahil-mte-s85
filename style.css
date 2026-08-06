@@ -1,0 +1,268 @@
+:root {
+  --brand-green: #2e7d32;
+  --brand-green-dark: #1b5e20;
+  --text-dark: #1c1c1c;
+  --muted: #6c757d;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== Navbar ===== */
+.navbar-custom {
+  background-color: #f7f8f6;
+  padding: 14px 0;
+}
+
+.navbar-brand span.logo-emoji {
+  font-size: 1.4rem;
+  margin-right: 6px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--brand-green) !important;
+  font-size: 1.3rem;
+}
+
+.nav-link-custom {
+  color: var(--text-dark) !important;
+  font-weight: 500;
+  margin: 0 12px;
+}
+
+.nav-link-custom:hover {
+  color: var(--brand-green) !important;
+}
+
+.btn-login {
+  border: 1px solid #ced4da;
+  color: var(--text-dark);
+  font-weight: 500;
+  padding: 6px 20px;
+  border-radius: 6px;
+}
+
+.btn-brand {
+  background-color: var(--brand-green);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 22px;
+  border-radius: 6px;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-green-dark);
+  color: #fff;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  min-height: 620px;
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.35), rgba(20, 20, 20, 0.55)),
+    url("./images/herobg.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  border: 1.5px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+.hero-subtext {
+  color: #f1f1f1;
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.btn-outline-hero {
+  border: 1.5px solid #fff;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 6px;
+}
+
+.btn-outline-hero:hover {
+  background-color: #fff;
+  color: var(--text-dark);
+}
+
+/* ===== Partners strip ===== */
+.partners-section {
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.partners-heading {
+  color: var(--muted);
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.partner-item {
+  color: #495057;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.05rem;
+}
+
+/* ===== Why choose section ===== */
+.why-section {
+  padding: 20px 0 70px;
+  text-align: center;
+}
+
+.why-section h2 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.why-section p.lead-text {
+  color: var(--muted);
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.feature-card {
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 28px 20px;
+  height: 100%;
+  text-align: left;
+  transition: box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.feature-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.icon-green {
+  background-color: #e3f2e6;
+  color: #2e7d32;
+}
+.icon-yellow {
+  background-color: #fdf1d8;
+  color: #c98a1f;
+}
+.icon-pink {
+  background-color: #fbe4ea;
+  color: #c2366b;
+}
+.icon-mint {
+  background-color: #e3f2e6;
+  color: #2e7d32;
+}
+
+.feature-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 0;
+}
+
+/* ===== Footer ===== */
+.footer-custom {
+  background-color: #eef4ea;
+  padding: 50px 0 30px;
+}
+
+.footer-custom h6 {
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+}
+
+.footer-brand {
+  font-weight: 700;
+  color: var(--brand-green);
+  font-size: 1.2rem;
+}
+
+.footer-custom p,
+.footer-custom li {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-icon {
+  width: 34px;
+  height: 34px;
+  background-color: var(--brand-green);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.social-icon:hover {
+  background-color: var(--brand-green-dark);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 520px;
+  }
+  .hero-title {
+    font-size: 1.3rem;
+  }
+}
